@@ -1,0 +1,9 @@
+.app {
+  background-color: rgb(245 251 254);
+  min-height: 100vh;
+  display: flex;
+  width: 100vw;
+}
+.app main{
+  flex: 4;
+}

@@ -1,0 +1,110 @@
+.sidebar {
+  flex: 1;
+  background-color: rgb(0 67 134);
+  color: white;
+  box-shadow: 0 0 10px #ddd;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.sidebarLogo {
+  width: 150px;
+  height: 130px;
+  background-color: black;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.sidebarProfil {
+  width: 90%;
+  margin-top: 20px;
+  position: relative;
+  padding-top: 10px;
+}
+.sidebarProfil h4 {
+  color: #b3afaf;
+  font-weight: 600;
+  position: absolute;
+  margin: 0;
+  top: 0px;
+  transform: translateY(-50%);
+  left: 0px;
+}
+.sidebarProfil button {
+  width: 100%;
+  background: transparent;
+  margin-top: 10px;
+  color: white;
+  border: 1px solid #3c65a9;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: initial;
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.sidebarProfil button:hover {
+  background: #3c65a9;
+}
+.sidebarProfil button .icon:first-child {
+  margin-right: 20px;
+  font-size: large;
+}
+.sidebarProfil button .icon:last-child {
+  margin-left: 20px;
+  font-size: large;
+  color: #3c65a9;
+}
+.sidebarMenu {
+  width: 90%;
+  margin-top: 30px;
+  position: relative;
+  padding-top: 10px;
+}
+.sidebarMenu h4 {
+  color: #b3afaf;
+  font-weight: 600;
+  position: absolute;
+  margin: 0;
+  top: 0px;
+  transform: translateY(-50%);
+  left: 0px;
+}
+.sidebarMenu ul {
+  width: 100%;
+}
+.sidebarMenu ul li {
+  background: transparent;
+  margin-top: 10px;
+  border: 1px solid #3c65a9;
+  padding: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.sidebarMenu ul li:hover {
+  background-color: #3c65a9;
+}
+.sidebarMenu ul li .link {
+  color: white;
+  font-size: large;
+}
+.sidebarMenu ul li span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 5px;
+  border-radius: 50%;
+  background-color: white;
+  color: rgb(0 67 134);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

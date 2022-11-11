@@ -1,0 +1,59 @@
+.navbar {
+  height: 130px;
+  background-color: #c7eff7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
+.navbarLeft h4 {
+  margin: 0;
+  font-size: 40px;
+  color: #003d7a;
+  margin-bottom: 10px;
+}
+.navbarLeft p {
+  margin: 0;
+  color: rgb(141, 141, 141);
+  font-size: 20px;
+}
+.navbarRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.navbarRight .notification {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #4a629c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.navbarRight .notification .icon {
+  font-size: 35px;
+  color: white;
+}
+.navbarRight .notification span {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  top: 0px;
+  right: 0px;
+  background-color: #ff666f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbarRight img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
