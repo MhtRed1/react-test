@@ -2,14 +2,17 @@
   flex: 1;
   background-color: rgb(0 67 134);
   color: white;
-  box-shadow: 0 0 10px #ddd;
-  height: 100vh;
+  /* height: 100vh; */
   position: sticky;
   top: 0;
+  /* overflow-y: scroll; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
+}
+.sidebarResponsive {
+  display: none;
 }
 .sidebarLogo {
   width: 150px;
@@ -25,6 +28,7 @@
   padding-top: 10px;
 }
 .sidebarProfil h4 {
+  font-size: 14px;
   color: #b3afaf;
   font-weight: 600;
   position: absolute;
@@ -39,24 +43,31 @@
   margin-top: 10px;
   color: white;
   border: 1px solid #3c65a9;
-  padding: 15px;
-  border-radius: 15px;
-  font-size: initial;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
   cursor: pointer;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
 .sidebarProfil button:hover {
   background: #3c65a9;
 }
-.sidebarProfil button .icon:first-child {
+.sidebarProfil button .icon2 {
   margin-right: 20px;
-  font-size: large;
+  font-size: 20px;
+  font-weight: bold;
 }
-.sidebarProfil button .icon:last-child {
+.sidebarProfil button img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.sidebarProfil button .icon1 {
   margin-left: 20px;
-  font-size: large;
+  font-size: 14px;
   color: #3c65a9;
 }
 .sidebarMenu {
@@ -66,6 +77,7 @@
   padding-top: 10px;
 }
 .sidebarMenu h4 {
+  font-size: 14px;
   color: #b3afaf;
   font-weight: 600;
   position: absolute;
@@ -81,8 +93,8 @@
   background: transparent;
   margin-top: 10px;
   border: 1px solid #3c65a9;
-  padding: 15px;
-  border-radius: 15px;
+  padding: 10px;
+  border-radius: 10px;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -94,7 +106,7 @@
 }
 .sidebarMenu ul li .link {
   color: white;
-  font-size: large;
+  font-size: 14px;
 }
 .sidebarMenu ul li span {
   position: absolute;
@@ -107,4 +119,57 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Responsiveness */
+
+@media (max-width: 1200px) {
+  .sidebar {
+    display: none;
+  }
+  .sidebarResponsive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(0 67 134);
+    color: white;
+    padding: 0px 50px;
+  }
+  .sideResLogo {
+    height: 50px;
+    width: 70px;
+    border-radius: 15px;
+    background-color: black;
+  }
+  .sideResToggle > :first-child {
+    width: 30px;
+    height: 30px;
+  }
+  .sideResIcons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .sideResIcons .icon,
+  .sideResIcons .notification .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .sideResIcons .notification {
+    position: relative;
+  }
+  .sideResIcons .notification span {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    top: -7px;
+    right: -7px;
+    background-color: #ff666f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

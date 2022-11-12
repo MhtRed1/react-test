@@ -5,10 +5,10 @@ function Navbar() {
   return (
     <div className='navbar'>
       <div className='navbarLeft'>
-        <h4>Bonjour, Ryan!</h4>
+        <h1>Bonjour, Ryan!</h1>
         <p>Voici ce qui ce passe sur votre compte aujourdhui!</p>
       </div>
-      <div class='navbarRight'>
+      <div className='navbarRight'>
         <div className='notification'>
           <MdOutlineNotificationsNone className='icon' />
           <span>4</span>
