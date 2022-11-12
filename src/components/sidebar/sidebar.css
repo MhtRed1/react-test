@@ -1,0 +1,175 @@
+.sidebar {
+  flex: 1;
+  background-color: rgb(0 67 134);
+  color: white;
+  /* height: 100vh; */
+  position: sticky;
+  top: 0;
+  /* overflow-y: scroll; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.sidebarResponsive {
+  display: none;
+}
+.sidebarLogo {
+  width: 150px;
+  height: 130px;
+  background-color: black;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.sidebarProfil {
+  width: 90%;
+  margin-top: 20px;
+  position: relative;
+  padding-top: 10px;
+}
+.sidebarProfil h4 {
+  font-size: 14px;
+  color: #b3afaf;
+  font-weight: 600;
+  position: absolute;
+  margin: 0;
+  top: 0px;
+  transform: translateY(-50%);
+  left: 0px;
+}
+.sidebarProfil button {
+  width: 100%;
+  background: transparent;
+  margin-top: 10px;
+  color: white;
+  border: 1px solid #3c65a9;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebarProfil button:hover {
+  background: #3c65a9;
+}
+.sidebarProfil button .icon2 {
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.sidebarProfil button img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.sidebarProfil button .icon1 {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #3c65a9;
+}
+.sidebarMenu {
+  width: 90%;
+  margin-top: 30px;
+  position: relative;
+  padding-top: 10px;
+}
+.sidebarMenu h4 {
+  font-size: 14px;
+  color: #b3afaf;
+  font-weight: 600;
+  position: absolute;
+  margin: 0;
+  top: 0px;
+  transform: translateY(-50%);
+  left: 0px;
+}
+.sidebarMenu ul {
+  width: 100%;
+}
+.sidebarMenu ul li {
+  background: transparent;
+  margin-top: 10px;
+  border: 1px solid #3c65a9;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.sidebarMenu ul li:hover {
+  background-color: #3c65a9;
+}
+.sidebarMenu ul li .link {
+  color: white;
+  font-size: 14px;
+}
+.sidebarMenu ul li span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 5px;
+  border-radius: 50%;
+  background-color: white;
+  color: rgb(0 67 134);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsiveness */
+
+@media (max-width: 1200px) {
+  .sidebar {
+    display: none;
+  }
+  .sidebarResponsive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(0 67 134);
+    color: white;
+    padding: 0px 50px;
+  }
+  .sideResLogo {
+    height: 50px;
+    width: 70px;
+    border-radius: 15px;
+    background-color: black;
+  }
+  .sideResToggle > :first-child {
+    width: 30px;
+    height: 30px;
+  }
+  .sideResIcons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .sideResIcons .icon,
+  .sideResIcons .notification .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .sideResIcons .notification {
+    position: relative;
+  }
+  .sideResIcons .notification span {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    top: -7px;
+    right: -7px;
+    background-color: #ff666f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

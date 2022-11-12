@@ -1,0 +1,14 @@
+.table{
+  width: 100%;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing:0 15px;
+}
+.table thead{
+  color: #8fe9fb;
+  font-size: 15px;
+  font-weight: 500;
+}
+/* .table thead td{
+  text-align: center;
+} */

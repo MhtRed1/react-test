@@ -1,0 +1,114 @@
+.partner {
+  padding: 50px;
+  min-height: calc(100vh - 480px);
+}
+.partnerTitle {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.partnerTitle h2 {
+  margin: 0;
+  color: #003d7a;
+  font-size: 30px;
+  font-weight: 500;
+}
+.partnerTitle p {
+  position: relative;
+  margin: 0;
+  margin-left: 50px;
+  color: rgb(141, 141, 141);
+  font-size: 30px;
+  font-weight: 500;
+}
+.partnerTitle p span {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  right: -50px;
+  top: 0;
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partnerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.partnerNav button {
+  background-color: #003d7a;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+.partnerNavLeft {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+.partnerNavSearch {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #eaf6fb;
+  border-radius: 10px;
+  background-color: white;
+}
+.partnerNavSearch input {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: #aae5f5;
+}
+.partnerNavSearch:focus-within {
+  border-color: #aae5f5;
+}
+.partnerNavSearch input::placeholder {
+  color: #aae5f5;
+}
+.partnerNavSearch .icon {
+  color: #aae5f5;
+  font-size: 30px;
+}
+.partnerNavFilter {
+  border: 1px solid #eaf6fb;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #e6f6fc;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  color: #aae5f5;
+}
+.partnerNavFilter .icon {
+  font-size: 30px;
+}
+.partnerNavFilter span {
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Responsiveness */
+@media (max-width: 1200px) {
+  .partnerNavLeft {
+    display: none;
+  }
+}

@@ -1,0 +1,52 @@
+.TableRow {
+  background-color: white;
+  border-radius: 10px;
+  color: rgb(87, 87, 87);
+  font-size: 15px;
+  outline: thin solid rgb(182, 182, 182);
+}
+
+.TableRow img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: white;
+}
+.TableRow .name {
+  text-decoration: underline;
+}
+.TableRow .zone {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+.TableRow .zone span {
+  color: rgb(94, 94, 94);
+  padding: 1px;
+  background-color: #e6f4f7;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.TableRow .disponible {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.TableRow .disponible span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00d94f;
+}
+.TableRow .disponible p {
+}
+.TableRow .disponible .icon {
+  background-color: #a2e8f3;
+  padding: 4px 5px 7px 5px;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+}

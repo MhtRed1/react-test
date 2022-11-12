@@ -1,0 +1,19 @@
+.app {
+  background-color: rgb(245 251 254);
+  display: flex;
+  width: 100vw;
+}
+.app main{
+  flex: 4;
+}
+@media (max-width: 1200px) {
+  .app {
+    background-color: rgb(245 251 254);
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .app main{
+    flex: none
+  }
+}
